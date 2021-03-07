@@ -1,40 +1,64 @@
 body {
-    margin: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 main {
-    display: flex;
-    flex-direction:  row;
-    justify-content: flex-start;    
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
 }
 #complementaryInfo {
-    top: 0;    
-    bottom: 0;
-    left: 0;
-    background-color: #ddd;
-    width: 800px;
-    padding: 0 1rem 0 1rem;    
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ddd;
+  width: 800px;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#complementaryInfo h1 {
+  padding: 0;
+  margin: 0.2rem 0 0.4rem 0.2rem;
+  padding-right: 2px;
+}
+#contactInformation div {
+  margin: 0.4rem 0 0.5rem 0.4rem;
 }
 #primaryInfo {
-    background-color: #eee;
+  background-color: #eee;
+}
+#marcoFoto {
+  background-color: rgb(160, 155, 155);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 11rem;
+  height: 11rem;
 }
 #Yo {
-    width:10rem;
-    height: 12rem;
-    border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
 }
 #personalName {
-    font-size: 2rem;
+  font-size: 1.6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 #cargo {
-    padding: .5rem;
+  padding: 0.5rem 0 1rem 0;
+  font-style: italic;
 }
 #contactInformation {
-    margin: 1 1 1 1;
-    border: 1px solid black;
-    padding: .5em;
+  margin: 0 1 0 1;
+  border: 3px solid #eee;
+  padding: 0.5em;
 }
 nav {
-    background-color: #ddd;
-    padding-left: 350px;
+  background-color: #ddd;
+  padding-left: 350px;
 }
