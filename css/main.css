@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction:  row;
+    justify-content: flex-start;    
+    margin: 0;
+}
+#complementaryInfo {
+    top: 0;    
+    bottom: 0;
+    left: 0;
+    background-color: #ddd;
+    width: 800px;
+    padding: 0 1rem 0 1rem;    
+}
+#primaryInfo {
+    background-color: #eee;
+}
+#Yo {
+    width:10rem;
+    height: 12rem;
+    border: 2px solid black;
+}
+#personalName {
+    font-size: 2rem;
+}
+#cargo {
+    padding: .5rem;
+}
+#contactInformation {
+    margin: 1 1 1 1;
+    border: 1px solid black;
+    padding: .5em;
+}
+nav {
+    background-color: #ddd;
+    padding-left: 350px;
+}

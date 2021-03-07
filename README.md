@@ -1,2 +1,2 @@
 # ProjectHTMLPage
-Project CV page
+This is a CV project to put HTML knowledge into practice
