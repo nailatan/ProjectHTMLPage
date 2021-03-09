@@ -26,12 +26,12 @@ main {
   margin: 0.2rem 0 0.4rem 0.2rem;
   padding-right: 2px;
 }
-#complementaryInfo p {
+#complementaryInfo p:not(#cargo){
   padding: 0;
   margin: 0;
 }
 
-#contactInformation div {
+#contactInformation p {
   margin: 0.4rem 0 0.5rem 0.4rem;
 }
 #primaryInfo {
@@ -64,9 +64,10 @@ main {
   color: #e8d6cb;
 }
 #cargo {
-  padding: 0.5rem 0 1rem 0;
+  padding: 0.1rem 0 0.4rem 0;
   font-style: italic;
-  color: #b58db6
+  color: #b58db6;
+  margin: 0;
 }
 #contactInformation {
   margin: 0 1 0 1;
