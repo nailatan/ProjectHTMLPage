@@ -13,12 +13,12 @@ main {
   bottom: 0;
   left: 0;
   background-color: #5d2e46;
-  width: 500;
+  /* width: 500; */
   padding: 0 1rem 0 1rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   position: fixed;
 }
 #complementaryInfo h1 {
@@ -26,24 +26,34 @@ main {
   margin: 0.2rem 0 0.4rem 0.2rem;
   padding-right: 2px;
 }
+#complementaryInfo p {
+  padding: 0;
+  margin: 0;
+}
+
 #contactInformation div {
   margin: 0.4rem 0 0.5rem 0.4rem;
 }
 #primaryInfo {
-  background-color: white;
-  margin-left: 300px;
+  background-color: #e8d6cb;
+  margin-left: 18rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  bottom: 0;
 }
 #marcoFoto {
-  background-color: #d0ada7;
-  color: white;
+  background-color: #b58db6;
+  color: #b58db6;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 11rem;
-  height: 11rem;
+  border-style: solid;
+  width: 10.5rem;
+  height: 10.5rem;
 }
+
 #Yo {
   width: 10rem;
   height: 10rem;
@@ -56,14 +66,22 @@ main {
 #cargo {
   padding: 0.5rem 0 1rem 0;
   font-style: italic;
-  color: #e8d6cb;
+  color: #b58db6
 }
 #contactInformation {
   margin: 0 1 0 1;
-  border: 3px solid #7d8597;
+  border: 3px solid #b58db6;
   padding: 0.5em;
-  color: #e8d6cb;
+  color: #b58db6;
 }
+#contactInformation h1 {
+   color: #e8d6cb;
+}
+
+h1 {
+  color: #b58db6;
+}
+
 nav {
   background-color: #5d2e46;
   padding-left: 350px;
@@ -110,12 +128,17 @@ nav a:link {
   height: 25px;
   border: 1px solid #b58db6;
   background-color: #b58db6;
-  margin: 1rem 0.1rem 0 0;
+  margin: 1rem 0.2rem 0 0;
 }
 .rangoNivelVacio {
   width: 15px;
   height: 25px;
   border: 1px solid #b58db6;
-  margin: 1rem 0.1rem 0 0;
+  margin: 1rem 0.2rem 0 0;
 }
 
+/* #experiencia {
+  display: flex;
+  flex-direction: row;
+  display: ;
+} */
