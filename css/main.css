@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #e8d6cb;
 }
 main {
   display: flex;
@@ -12,13 +13,13 @@ main {
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: #5d2e46;
+background: linear-gradient(to right, #5d2e46 95%,   #e8d6cb);
   /* width: 500; */
   padding: 0 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: fixed;
 }
 #complementaryInfo h1 {
@@ -26,6 +27,8 @@ main {
   margin: 0.2rem 0 0.4rem 0.2rem;
   padding-right: 2px;
 }
+
+
 #complementaryInfo p:not(#cargo){
   padding: 0;
   margin: 0;
@@ -40,6 +43,7 @@ main {
   margin-top: 2rem;
   padding-left: 2rem;
   bottom: 0;
+  color: #574D48
 }
 #marcoFoto {
   background-color: #b58db6;
@@ -52,6 +56,7 @@ main {
   border-style: solid;
   width: 10.5rem;
   height: 10.5rem;
+  margin-top: 50px;
 }
 
 #Yo {
@@ -82,7 +87,6 @@ main {
 h1 {
   color: #b58db6;
 }
-
 nav {
   background-color: #5d2e46;
   padding-left: 350px;
@@ -138,8 +142,35 @@ nav a:link {
   margin: 1rem 0.2rem 0 0;
 }
 
-/* #experiencia {
-  display: flex;
+.unaExperiencia {
+  display: inline-flex;
   flex-direction: row;
-  display: ;
+  justify-content:start;
+  align-items: baseline;
+}
+
+.unaExperiencia h2 {  
+  color: #b58db6;
+  font-style: italic;  
+  min-width: 12rem;
+  max-width: 12rem;
+}
+.unaExperiencia p {  
+  min-width: 50rem;  
+}
+
+/* .unaExperiencia div {    
+  flex-wrap: wrap;
 } */
+#primaryInfo h1 {
+  padding: 0;
+  margin: 0.2rem 0 0.4rem 0.2rem;
+  padding-right: 2px;
+  font-size: 2rem;  
+  border-bottom: 1px solid #b58db6;
+}
+
+.unaExperiencia span {
+  display: block;
+  font-size: 1rem;  
+}
