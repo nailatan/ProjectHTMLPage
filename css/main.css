@@ -1,8 +1,12 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #e8d6cb;
 }
+
+h1 {
+  color: #b58db6;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -13,8 +17,7 @@ main {
   top: 0;
   bottom: 0;
   left: 0;
-background: linear-gradient(to right, #5d2e46 95%,   #e8d6cb);
-  /* width: 500; */
+  background: linear-gradient(to right, #5d2e46 95%, #e8d6cb);
   padding: 0 1rem 0 1rem;
   display: flex;
   flex-direction: column;
@@ -24,73 +27,92 @@ background: linear-gradient(to right, #5d2e46 95%,   #e8d6cb);
 }
 #complementaryInfo h1 {
   padding: 0;
-  margin: 0.2rem 0 0.4rem 0.2rem;
+  margin: 0.5rem 0 0.4rem 0.2rem;
   padding-right: 2px;
 }
 
-
-#complementaryInfo p:not(#cargo){
+#complementaryInfo p {
   padding: 0;
   margin: 0;
 }
 
-#contactInformation p {
-  margin: 0.4rem 0 0.5rem 0.4rem;
+/*Cargo */
+#complementaryInfo > p:nth-child(3) {
+  padding: 0.1rem 0 0.4rem 0;
+  font-style: italic;
+  color: #b58db6;
+  margin: 0;
+  margin-bottom: 1rem;
 }
+
+/*Nombre*/
+#complementaryInfo > p:nth-child(2) {
+  font-size: 1.6rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #e8d6cb;
+}
+
+/*Info contacto */
+#complementaryInfo > div:nth-child(4) {
+  margin: 0 1 0 1;
+  border: 3px solid #b58db6;
+  padding: 0.5em;
+  color: #b58db6;
+}
+
+#complementaryInfo > div:nth-child(4) h1 {
+  color: #e8d6cb;
+}
+
+#complementaryInfo > div:nth-child(4) img {
+  width: 20px;
+  height: 20px;
+}
+
+#complementaryInfo > div:nth-child(4) a {
+  text-decoration: none;
+  color: #b58db6;
+}
+
+#complementaryInfo > div:nth-child(4) a:link {
+  text-decoration: none;
+}
+
+#complementaryInfo > img {
+  width: 10rem;
+  height: 10rem;
+  background-color: #aaaa;
+  color: #b58db6;
+  border-style: solid;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
 #primaryInfo {
   background-color: #e8d6cb;
   margin-left: 18rem;
   margin-top: 2rem;
   padding-left: 2rem;
   bottom: 0;
-  color: #574D48
-}
-#marcoFoto {
-  background-color: #b58db6;
-  color: #b58db6;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  border-style: solid;
-  width: 10.5rem;
-  height: 10.5rem;
-  margin-top: 50px;
+  color: #574d48;
 }
 
-#Yo {
-  width: 10rem;
-  height: 10rem;
+#primaryInfo h1 {
+  padding: 0;
+  margin: 2rem 0 0.4rem 0.2rem;
+  padding-right: 2px;
+  font-size: 2rem;
+  border-bottom: 1px solid #b58db6;
 }
-#personalName {
-  font-size: 1.6rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #e8d6cb;
-}
-#cargo {
-  padding: 0.1rem 0 0.4rem 0;
-  font-style: italic;
-  color: #b58db6;
-  margin: 0;
-}
-#contactInformation {
-  margin: 0 1 0 1;
-  border: 3px solid #b58db6;
-  padding: 0.5em;
-  color: #b58db6;
-}
-#contactInformation h1 {
-   color: #e8d6cb;
+#primaryInfo div:last-child {
+  margin-bottom: 10px;
 }
 
-h1 {
-  color: #b58db6;
-}
 nav {
   background-color: #5d2e46;
   padding-left: 350px;
-  position:  fixed;
+  padding-right: 200px;
+  position: fixed;
   right: 0;
   left: 0;
   display: flex;
@@ -105,7 +127,7 @@ nav a {
 nav a:link {
   text-decoration: none;
 }
-#skill {
+.skill {
   display: flex;
   flex-direction: column;
 }
@@ -116,7 +138,7 @@ nav a:link {
   margin: 1rem 0.1rem 0 0;
   width: 120px;
 }
-#skill h1 {
+.skill h1 {
   padding: 0;
   margin: 1rem 0 0.4rem 0.2rem;
   padding-right: 2px;
@@ -128,14 +150,14 @@ nav a:link {
   flex-direction: row;
   margin-left: 1rem;
 }
-.rangoNivel {
+.progresoCompleto {
   width: 15px;
   height: 25px;
   border: 1px solid #b58db6;
   background-color: #b58db6;
   margin: 1rem 0.2rem 0 0;
 }
-.rangoNivelVacio {
+.cajaProgreso {
   width: 15px;
   height: 25px;
   border: 1px solid #b58db6;
@@ -145,32 +167,22 @@ nav a:link {
 .unaExperiencia {
   display: inline-flex;
   flex-direction: row;
-  justify-content:start;
+  justify-content: start;
   align-items: baseline;
 }
 
-.unaExperiencia h2 {  
+.unaExperiencia h2 {
   color: #b58db6;
-  font-style: italic;  
+  font-style: italic;
   min-width: 12rem;
   max-width: 12rem;
 }
-.unaExperiencia p {  
-  min-width: 50rem;  
-}
-
-/* .unaExperiencia div {    
-  flex-wrap: wrap;
-} */
-#primaryInfo h1 {
-  padding: 0;
-  margin: 0.2rem 0 0.4rem 0.2rem;
-  padding-right: 2px;
-  font-size: 2rem;  
-  border-bottom: 1px solid #b58db6;
+.unaExperiencia p {
+  min-width: 50rem;
+  text-align: justify;
 }
 
 .unaExperiencia span {
   display: block;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
