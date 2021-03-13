@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -101,11 +102,16 @@ main {
   padding: 0;
   margin: 2rem 0 0.4rem 0.2rem;
   padding-right: 2px;
+  padding-top: 30px;
   font-size: 2rem;
   border-bottom: 1px solid #b58db6;
 }
 #primaryInfo div:last-child {
   margin-bottom: 10px;
+}
+#primaryInfo p {
+  text-align: justify;
+  padding-right: 1rem;
 }
 
 nav {
@@ -152,14 +158,14 @@ nav a:link {
 }
 .progresoCompleto {
   width: 15px;
-  height: 25px;
+  height: 20px;
   border: 1px solid #b58db6;
   background-color: #b58db6;
   margin: 1rem 0.2rem 0 0;
 }
 .cajaProgreso {
   width: 15px;
-  height: 25px;
+  height: 20px;
   border: 1px solid #b58db6;
   margin: 1rem 0.2rem 0 0;
 }
@@ -179,6 +185,8 @@ nav a:link {
 }
 .unaExperiencia p {
   min-width: 50rem;
+  padding-right: 2rem;
+  /* padding: .1rem 0 0rem 0; */
   text-align: justify;
 }
 
