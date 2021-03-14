@@ -112,6 +112,8 @@ main {
 #primaryInfo p {
   text-align: justify;
   padding-right: 1rem;
+  margin: 0 0 .6rem 0;
+  color: #5d2e46;
 }
 
 nav {
@@ -193,4 +195,7 @@ nav a:link {
 .unaExperiencia span {
   display: block;
   font-size: 1rem;
+}
+li {
+ color: #5d2e46; 
 }
